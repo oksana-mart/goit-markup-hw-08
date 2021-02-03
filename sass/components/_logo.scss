@@ -1,0 +1,9 @@
+.logo {
+  font-family: $sec-font-family;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  
+  &--accent {
+    color: $accent-color;
+  }
+}

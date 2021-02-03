@@ -1,0 +1,22 @@
+.hero {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  &__title {
+    width: 696px;
+    margin: 0 auto 30px;
+    color: $primary-white-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 10px 32px;
+    line-height: 1.88;
+  }
+}

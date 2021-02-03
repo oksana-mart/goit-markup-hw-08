@@ -1,0 +1,16 @@
+.hero-overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $hero-bg-color;
+  background-image: linear-gradient( 
+    to right, 
+    $gradient-bg-color, 
+    $gradient-bg-color 
+  ),
+  url(../images/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

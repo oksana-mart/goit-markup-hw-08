@@ -1,0 +1,41 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  &__icon {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    fill:currentColor;
+  }
+}
+
+.clients__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  @include border($icon-main-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: $icon-main-color;
+
+  @extend %animation;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    @include border($accent-color);
+    color: $accent-color;
+  }
+}

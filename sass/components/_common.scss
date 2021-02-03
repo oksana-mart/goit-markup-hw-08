@@ -1,0 +1,38 @@
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: $secondary-text-color;
+  font-size: 36px;
+  line-height: $secondary-line-height;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.button {
+  min-width: 200px;
+  font-style: normal;
+  font-family: inherit;
+  font-size: $secondary-font-size;
+  font-weight: $main-font-weight;
+  letter-spacing: 0.06em;
+
+  color: $primary-white-color;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+  cursor: pointer;
+}

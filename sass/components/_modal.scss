@@ -1,0 +1,70 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+
+  transition-property: opacity;
+  transition-duration: 400ms;
+  transition-timing-function: linear;
+
+  &-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+  background: $primary-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/* close-button */
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  @extend %flex;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background: $primary-white-color;
+  border-radius: 50%;
+  @include border(rgba(0, 0, 0, 0.1));
+  cursor: pointer;
+  color: $dark-color;
+
+  &__icon {
+    fill: currentColor;
+    @extend %animation;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus &__icon,
+  &:hover &__icon {
+    color: $accent-color;
+  }
+}
+
+/* кнопка Отправить */
+.submit-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 55px 10px 56px;
+  line-height: 1.88;
+}

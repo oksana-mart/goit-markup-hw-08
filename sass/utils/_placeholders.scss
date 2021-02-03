@@ -1,0 +1,15 @@
+%animation {
+  transition-duration: $animation-duration;
+  transition-timing-function: $animation-type;
+}
+
+%flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%font-style {
+  font-style: normal;
+  font-weight: $secondary-font-weight;
+}

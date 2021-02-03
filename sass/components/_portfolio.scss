@@ -1,0 +1,19 @@
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.buttons-list {
+  display: flex;
+  margin: 0 auto 50px;
+  justify-content: center;
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}

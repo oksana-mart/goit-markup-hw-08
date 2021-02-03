@@ -1,0 +1,32 @@
+.footer-contacts {
+  margin-right: 70px;
+}
+
+.footer__logo {
+  color: $primary-white-color;
+  display: inline-block;
+  margin-bottom: 20px;
+} 
+
+.footer-address {
+  font-weight: $secondary-font-weight;
+  font-size: $main-font-size;
+  line-height: 1.71;
+  font-style: normal;
+  width: 231px;
+
+  &__home {
+    color: $primary-white-color;
+  }
+  
+  &__link {
+    height: 21px;
+    color: $subscribe-form-color;
+  }
+  
+  &__mail,
+  &__home {
+    display: inline-block;
+    margin-bottom: 9px; 
+  }
+}
