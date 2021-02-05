@@ -5,3 +5,8 @@
 @mixin border-secondary($color) {
   border: 2px solid $color;
 }
+
+@mixin animation {
+  transition-duration: $animation-duration;
+  transition-timing-function: $animation-type;
+}
