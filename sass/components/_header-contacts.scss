@@ -1,31 +1,90 @@
 .contacts-header {
-  font-style: normal;
-  font-weight: 500;
-  font-size: $main-font-size;
-  line-height: $main-line-height;
-  letter-spacing: 0.02em;
-  color: inherit;
-  display: flex;
-  align-items: center;
-  padding: 32px 0;
-  fill:$main-text-color;
+  display: none;
 
-  @extend %animation;
-
-  &--mail {
-    margin-right: 50px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: auto;
   }
 
-  &:hover,
-  &:focus,
-  &:active {
-    color: $accent-color;
-    outline: none;
-    fill: $accent-color;
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
+}
+
+.contacts-header__link {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $tablet-font-size;
+    line-height: $secondary-line-height;
+    letter-spacing: 0.02em;
+    color: inherit;
+    fill: $main-text-color;
+    @include animation;
+
+    &--mail {
+      margin-bottom: 10px;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $accent-color;
+      outline: none;
+      fill: $accent-color;
+    }
   }
 
-  &__icon {
+  @media screen and (min-width: $desktop) {
+    font-size: $main-font-size;
+    line-height: $main-line-height;
+    padding: 32px 0;
+
+    &--mail {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.contacts-header__icon--mail {
+  @media screen and (min-width: $tablet) {
+    width: 14px;
+    height: 10px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.contacts-header__icon--tel {
+  @media screen and (min-width: $tablet) {
+    width: 10px;
+    height: 14px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+.contacts-header__icon {
+  @media screen and (min-width: $tablet) {
     margin-right: 10px;
+  }
+}
+
+.contacts-header__link--mail {
+  @media screen and (min-width: $desktop) {
+    margin-right: 30px;
+    margin-left: auto;
   }
 }

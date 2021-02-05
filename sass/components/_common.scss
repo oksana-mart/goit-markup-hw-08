@@ -7,10 +7,21 @@
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  @media screen and (min-width: $mobile) {
+    width: 430px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
 }
 
 .section-title {
