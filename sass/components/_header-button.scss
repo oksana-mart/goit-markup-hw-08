@@ -1,0 +1,25 @@
+.header-button {
+  @extend %flex;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  padding: 0;
+  background: $primary-white-color;
+  cursor: pointer;
+  color: $dark-color;
+  border: none;
+
+  &__icon {
+    fill: currentColor;
+    @include animation;
+  }
+
+  &:focus &__icon,
+  &:hover &__icon {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
