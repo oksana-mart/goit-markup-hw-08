@@ -1,14 +1,12 @@
-.footer-links {
-  margin-right: 93px;
-}
-  
-.footer-networks { 
+.footer-networks {
   display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
 
   &__items:not(:last-child) {
     margin-right: 10px;
   }
-  
+
   &__icons {
     width: 20px;
     height: 20px;
@@ -24,7 +22,7 @@
   border-radius: 50%;
   color: $primary-white-color;
 
-  @extend %animation;
+  @include animation;
 
   &:hover,
   &:focus {

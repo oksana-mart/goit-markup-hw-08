@@ -13,7 +13,7 @@
   cursor: pointer;
   outline: transparent;
 
-  @extend %animation;
+  @include animation;
 
   &:hover,
   &:focus {

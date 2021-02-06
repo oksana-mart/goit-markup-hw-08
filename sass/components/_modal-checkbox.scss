@@ -8,7 +8,7 @@
   }
 
   &__label::before {
-    content: " ";
+    content: ' ';
     display: inline-block;
     width: 16px;
     height: 15px;
@@ -16,10 +16,10 @@
     @include border-secondary($dark-color);
     border-radius: 2px;
     margin-right: 7px;
-  
-    @extend %animation;
+
+    @include animation;
   }
-  
+
   &__old:checked + &__label::before {
     background-color: $accent-color;
     border-color: $accent-color;
@@ -39,7 +39,7 @@
   font-weight: $secondary-font-weight;
   font-size: $main-font-size;
   line-height: 1.71;
-  color:$main-text-color;
+  color: $main-text-color;
 
   &--accent {
     text-decoration-line: underline;

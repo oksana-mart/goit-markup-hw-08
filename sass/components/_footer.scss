@@ -2,11 +2,32 @@
   background-color: $dark-bg-color;
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
 }
 
 .footer-wrapper {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-tablet-wrapper {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+    margin-right: 93px;
+    justify-content: flex-start;
+  }
 }
 
 .footer-text {

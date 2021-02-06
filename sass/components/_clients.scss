@@ -1,36 +1,68 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  &__list {
-    display: flex;
-    justify-content: center;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
-  
-  &__item:not(:last-child) {
-    margin-right: 30px;
-  }
-  
+
   &__icon {
     display: flex;
     justify-content: center;
     text-align: center;
-    fill:currentColor;
+    fill: currentColor;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding: 0;
+  }
+}
+
+.clients__item {
+  max-width: 210px;
+  margin-bottom: 0;
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 2 - 30px);
+
+  @media screen and (min-width: $tablet) {
+    max-width: 226px;
+    margin-bottom: 0;
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 170px;
+    flex-basis: calc(100% / 6 - 30px);
   }
 }
 
 .clients__link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
   height: 90px;
-  @include border($icon-main-color);
+  max-width: 210px;
   box-sizing: border-box;
   border-radius: 4px;
   color: $icon-main-color;
+  @include animation;
+  @include border($icon-main-color);
 
-  @extend %animation;
+  @media screen and (min-width: $tablet) {
+    max-width: 226px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 170px;
+  }
 
   &:hover,
   &:focus {
