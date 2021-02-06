@@ -100,7 +100,7 @@
         <!-- Чем мы занимаемся -->
       <section class="services">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
+          <h2 class="section-title services__title">Чем мы занимаемся</h2>
           <ul class="services__list list">
             <li class="services__element">
               <img src="./images/typing1.jpg" 
@@ -136,7 +136,7 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-list__member">
-              <img src="./images/portrait1.jpg" alt="Портрет Игоря Демьяненко" width="270"/>
+              <img class="team-list__photo" src="./images/portrait1.jpg" alt="Портрет Игоря Демьяненко"/>
               <div class="team-list__element">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
                 <p class="team-list__position" lang="en">Product Designer</p>
@@ -173,7 +173,7 @@
               </div>
             </li>
             <li class="team-list__member">
-              <img src="./images/portrait2.jpg" alt="Портрет Ольги Репиноой" width="270"/>
+              <img class="team-list__photo" src="./images/portrait2.jpg" alt="Портрет Ольги Репиноой"/>
               <div class="team-list__element">
                 <h3 class="team-list__name">Ольга Репина</h3>
                 <p class="team-list__position" lang="en">Frontend Developer</p>
@@ -210,7 +210,7 @@
               </div>
             </li>
             <li class="team-list__member">
-              <img src="./images/portrait3.jpg" alt="Портрет Николая Тарасова" width="270"/>
+              <img class="team-list__photo" src="./images/portrait3.jpg" alt="Портрет Николая Тарасова"/>
               <div class="team-list__element">
                 <h3 class="team-list__name">Николай Тарасов</h3>
                 <p class="team-list__position" lang="en">Marketing</p>
@@ -247,7 +247,7 @@
               </div>
             </li>
             <li class="team-list__member">
-              <img src="./images/portrait4.jpg" alt="Портрет Михаила Ермакова" width="270"/>
+              <img class="team-list__photo" src="./images/portrait4.jpg" alt="Портрет Михаила Ермакова"/>
               <div class="team-list__element">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
                 <p class="team-list__position" lang="en">UI Designer</p>
@@ -343,50 +343,52 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <div class="footer-contacts">
-            <a class="logo footer__logo" lang="en" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
-            <address class="footer-address">
-              <div>
-                <div class="footer-address__home">г. Киев, пр-т Леси Украинки, 26</div>
-                <div class="footer-address__mail"><a class="footer-address__link" href="mailto:info@example.com">info@example.com</a></div>
-                <div><a class="footer-address__link" href="tel:+380991111111">+38 099 111 11 11</a></div>
-              </div>
-            </address>
+          <div class="footer-tablet-wrapper">
+            <div class="footer-contacts">
+              <a class="logo footer__logo" lang="en" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
+              <address class="footer-address">
+                <div>
+                  <div class="footer-address__home">г. Киев, пр-т Леси Украинки, 26</div>
+                  <div class="footer-address__mail"><a class="footer-address__link" href="mailto:info@example.com">info@example.com</a></div>
+                  <div><a class="footer-address__link" href="tel:+380991111111">+38 099 111 11 11</a></div>
+                </div>
+              </address>
+            </div>
+            <div class="footer-links">
+              <p class="footer-text">присоединяйтесь</p>
+              <ul class="list footer-networks">
+                <li class="footer-networks__items">
+                  <a class="footer-networks__links" href="">
+                    <svg class="footer-networks__icons">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-networks__items">
+                  <a class="footer-networks__links" href="">
+                    <svg class="footer-networks__icons">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-networks__items">
+                  <a class="footer-networks__links" href="">
+                    <svg class="footer-networks__icons">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-networks__items">
+                  <a class="footer-networks__links" href="">
+                    <svg class="footer-networks__icons">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="footer-links">
-            <p class="footer-text">присоединяйтесь</p>
-            <ul class="list footer-networks">
-              <li class="footer-networks__items">
-                <a class="footer-networks__links" href="">
-                  <svg class="footer-networks__icons">
-                    <use href="./images/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-networks__items">
-                <a class="footer-networks__links" href="">
-                  <svg class="footer-networks__icons">
-                    <use href="./images/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-networks__items">
-                <a class="footer-networks__links" href="">
-                  <svg class="footer-networks__icons">
-                    <use href="./images/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-networks__items">
-                <a class="footer-networks__links" href="">
-                  <svg class="footer-networks__icons">
-                    <use href="./images/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
+          <div class="subscribe">
             <p class="footer-text">Подпишитесь на рассылку</p>
             <form autocomplete="off" class="subscribe-form">
               <input class="subscribe-form__input" type="email" name="mail" placeholder="E-mail">
