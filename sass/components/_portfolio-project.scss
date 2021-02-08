@@ -43,13 +43,14 @@
   }
 
   &__img {
-    height: 294px;
     position: relative;
     overflow: hidden;
   }
 
   &__photo {
+    display: block;
     width: 100%;
+    height: auto;
   }
 
   &__overlay {

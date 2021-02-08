@@ -809,7 +809,7 @@ img {
 }
 
 .hero__title {
-  width: 360px;
+  max-width: 360px;
   margin: 0 auto 30px;
   color: #ffffff;
   font-weight: 900;
@@ -1304,13 +1304,14 @@ img {
 }
 
 .project__img {
-  height: 294px;
   position: relative;
   overflow: hidden;
 }
 
 .project__photo {
+  display: block;
   width: 100%;
+  height: auto;
 }
 
 .project__overlay {
