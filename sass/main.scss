@@ -4,6 +4,9 @@
 @import 'utils/placeholders';
 @import 'base/base';
 @import 'components/common';
+@import 'components/modal';
+@import 'components/modal-form';
+@import 'components/modal-checkbox';
 @import 'components/logo';
 @import 'components/header';
 @import 'components/menu-button';
@@ -23,6 +26,3 @@
 @import 'components/footer-contacts';
 @import 'components/footer-join';
 @import 'components/footer-subscribe';
-@import 'components/modal';
-@import 'components/modal-form';
-@import 'components/modal-checkbox';
