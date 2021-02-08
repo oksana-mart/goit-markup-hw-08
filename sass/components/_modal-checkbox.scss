@@ -15,7 +15,6 @@
     cursor: pointer;
     @include border-secondary($dark-color);
     border-radius: 2px;
-    margin-right: 7px;
 
     @include animation;
   }
@@ -36,14 +35,21 @@
 .checkbox__text {
   display: inline-block;
   font-style: normal;
+  margin-left: 8px;
   font-weight: $secondary-font-weight;
-  font-size: $main-font-size;
-  line-height: 1.71;
+  font-size: $tablet-font-size;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: $main-text-color;
 
   &--accent {
     text-decoration-line: underline;
     text-decoration-skip-ink: none;
     color: $accent-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: $main-font-size;
+    line-height: 1.71;
   }
 }
