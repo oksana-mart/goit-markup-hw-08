@@ -1296,11 +1296,7 @@ img {
 }
 
 .project__description {
-  width: 100%;
   padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
 }
 
 .project__img {
@@ -1349,8 +1345,11 @@ img {
 }
 
 .project__link {
-  width: 100%;
-  display: inline-block;
+  height: 100%;
+  display: block;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
