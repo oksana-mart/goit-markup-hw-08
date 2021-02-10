@@ -9,6 +9,7 @@
   transition-property: opacity;
   transition-duration: 400ms;
   transition-timing-function: linear;
+  overflow-y: scroll;
 
   &-hidden {
     opacity: 0;

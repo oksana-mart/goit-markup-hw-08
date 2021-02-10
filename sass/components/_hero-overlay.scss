@@ -9,7 +9,17 @@
       $gradient-bg-color,
       $gradient-bg-color
     ),
-    url(../images/hero-background.jpg);
+    url(../images/mobile/hero-mobile-480.jpg);
+
+  @media screen and (min-resolution: 192dpi) {
+    background-image: linear-gradient(
+        to right,
+        $gradient-bg-color,
+        $gradient-bg-color
+      ),
+      url(../images/mobile/hero-mobile@2x-960.jpg);
+  }
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -17,10 +27,38 @@
   @media screen and (min-width: $tablet) {
     height: 400px;
     max-width: 768px;
+    background-image: linear-gradient(
+        to right,
+        $gradient-bg-color,
+        $gradient-bg-color
+      ),
+      url(../images/tablet/hero-tablet-768.jpg);
+    @media screen and (min-resolution: 192dpi) {
+      background-image: linear-gradient(
+          to right,
+          $gradient-bg-color,
+          $gradient-bg-color
+        ),
+        url(../images/tablet/hero-tablet@2x-1536.jpg);
+    }
   }
 
   @media screen and (min-width: $desktop) {
     height: 600px;
     max-width: 1600px;
+    background-image: linear-gradient(
+        to right,
+        $gradient-bg-color,
+        $gradient-bg-color
+      ),
+      url(../images/desktop/hero.jpg);
+    @media screen and (min-resolution: 192dpi) {
+      background-image: linear-gradient(
+          to right,
+          $gradient-bg-color,
+          $gradient-bg-color
+        ),
+        url(../images/desktop/hero@2x.jpg);
+    }
   }
 }
