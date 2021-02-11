@@ -541,10 +541,16 @@ img {
 }
 
 .menu-contacts__tel {
-  font-size: 34px;
   line-height: 1.18;
   color: #2196f3;
   margin-bottom: 32px;
+  font-size: calc(24px + (34 - 24) * ((100vw - 300px) / (480 - 300)));
+}
+
+@media screen and (min-width: 480px) {
+  .menu-contacts__tel {
+    font-size: 34px;
+  }
 }
 
 .menu-contacts__mail {
@@ -569,10 +575,16 @@ img {
 .menu-networks__link {
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196f3;
+  font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (480 - 300)));
+}
+
+@media screen and (min-width: 480px) {
+  .menu-networks__link {
+    font-size: 18px;
+  }
 }
 
 .nav {
@@ -1342,13 +1354,24 @@ img {
   width: 100%;
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
-  padding: 77px 24px;
   -webkit-transform: translatey(0);
           transform: translatey(0);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (480 - 300)));
+  padding-left: calc(24px + (24 - 7) * ((100vw - 300px) / (480 - 300)));
+  padding-right: calc(24px + (24 - 7) * ((100vw - 300px) / (480 - 300)));
+  padding-top: calc(42px + (63 - 42) * ((100vw - 300px) / (480 - 300)));
+  padding-bottom: calc(42px + (63 - 42) * ((100vw - 300px) / (480 - 300)));
+}
+
+@media screen and (min-width: 480px) {
+  .project__overlay {
+    font-size: 18px;
+    padding: 77px 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1364,7 +1387,6 @@ img {
 }
 
 .project__text {
-  font-size: 18px;
   line-height: 1.56;
   color: #ffffff;
 }

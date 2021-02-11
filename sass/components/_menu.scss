@@ -57,10 +57,14 @@
   letter-spacing: 0.02em;
 
   &__tel {
-    font-size: 34px;
     line-height: 1.18;
     color: $accent-color;
     margin-bottom: 32px;
+    font-size: calc(24px + (34 - 24) * ((100vw - 300px) / (480 - 300)));
+
+    @media screen and (min-width: $mobile) {
+      font-size: 34px;
+    }
   }
 
   &__mail {
@@ -83,9 +87,13 @@
   &__link {
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.02em;
     color: #2196f3;
+    font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (480 - 300)));
+
+    @media screen and (min-width: $mobile) {
+      font-size: 18px;
+    }
   }
 }
