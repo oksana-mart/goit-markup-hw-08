@@ -509,7 +509,13 @@ img {
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  margin-bottom: 306px;
+  margin-bottom: calc(140px + (302 - 140) * ((100vw - 300px) / (480 - 300)));
+}
+
+@media screen and (min-width: 480px) {
+  .menu-nav {
+    margin-bottom: 302px;
+  }
 }
 
 .menu-nav__link {
