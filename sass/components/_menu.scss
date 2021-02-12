@@ -1,11 +1,11 @@
 .menu-container {
   z-index: 2;
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  max-height: 796px;
+  height: 100%;
   padding: 48px 40px;
   overflow-y: scroll;
   background: $primary-white-color;
@@ -14,7 +14,8 @@
 
   &.is-open {
     @media screen and (max-width: 768px) {
-      display: block;
+      display: flex;
+      flex-direction: column;
     }
   }
 }
@@ -24,11 +25,10 @@
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  margin-bottom: calc(120px + (302 - 120) * ((100vw - 300px) / (480 - 300)));
+  margin-bottom: auto;
   font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (480 - 300)));
 
   @media screen and (min-width: $mobile) {
-    margin-bottom: 302px;
     font-size: 40px;
   }
 
@@ -75,8 +75,8 @@
   &__mail {
     line-height: 1.17;
     color: $main-text-color;
-    margin-bottom: calc(48px + (64 - 48) * ((100vw - 300px) / (480 - 300)));
-    font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (480 - 300)));
+    margin-bottom: calc(45px + (64 - 45) * ((100vw - 300px) / (480 - 300)));
+    font-size: calc(17px + (24 - 17) * ((100vw - 300px) / (480 - 300)));
 
     @media screen and (min-width: $mobile) {
       font-size: 24px;
