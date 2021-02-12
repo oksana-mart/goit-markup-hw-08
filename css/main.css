@@ -508,7 +508,7 @@ img {
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  margin-bottom: calc(140px + (302 - 140) * ((100vw - 300px) / (480 - 300)));
+  margin-bottom: calc(120px + (302 - 120) * ((100vw - 300px) / (480 - 300)));
   font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (480 - 300)));
 }
 
