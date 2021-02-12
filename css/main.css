@@ -506,15 +506,16 @@ img {
 .menu-nav {
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   margin-bottom: calc(140px + (302 - 140) * ((100vw - 300px) / (480 - 300)));
+  font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (480 - 300)));
 }
 
 @media screen and (min-width: 480px) {
   .menu-nav {
     margin-bottom: 302px;
+    font-size: 40px;
   }
 }
 
